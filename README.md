@@ -16,8 +16,8 @@ When an intruder enters the airspace, the system autonomously identifies and log
 - **Threat Level Evaluation**: AI-calculated risk profile (MEDIUM RISK / CRITICAL THREAT)
 - **Live GPS Coordinates**: Precise latitude and longitude grids within the Romanian airspace corridor
 - **Reactor Core Status**: Power output monitoring of the escort vessel in Gigawatts (GW)
-## 📊 Actualizare: Date și Simulări Live din Sistem (Iunie 2026)
-Pentru a demonstra puterea agentului Gemini și conectivitatea cu MongoDB Atlas, am extras un set real de date salvat de simulator în timpul unui test de interceptare:
+## 📊 Update: Live System Simulation & Telemetry Data (June 2026)
+To demonstrate the reasoning power of the Gemini agent and its connectivity with MongoDB Atlas, we extracted a live telemetry dataset saved during a simulated intercept mission:
 
 ```json
 {
@@ -42,7 +42,7 @@ Pentru a demonstra puterea agentului Gemini și conectivitatea cu MongoDB Atlas,
   "mcp_log_status": "SUCCESSFULLY_SAVED_TO_MONGODB_ATLAS"
 }
 ```
-*Notă: Aceste date arată exact ce informații trimite panoul nostru în Flask către baza de date atunci când AI-ul detectează o țintă.*
+*Note: This dataset reflects the exact structured telemetry sent by our Flask backend to the cloud cluster when the AI agent identifies an airspace threat.*
 
 
 ## 🛠️ Tech Stack & Architecture
