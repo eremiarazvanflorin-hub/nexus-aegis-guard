@@ -16,6 +16,34 @@ When an intruder enters the airspace, the system autonomously identifies and log
 - **Threat Level Evaluation**: AI-calculated risk profile (MEDIUM RISK / CRITICAL THREAT)
 - **Live GPS Coordinates**: Precise latitude and longitude grids within the Romanian airspace corridor
 - **Reactor Core Status**: Power output monitoring of the escort vessel in Gigawatts (GW)
+## 📊 Actualizare: Date și Simulări Live din Sistem (Iunie 2026)
+Pentru a demonstra puterea agentului Gemini și conectivitatea cu MongoDB Atlas, am extras un set real de date salvat de simulator în timpul unui test de interceptare:
+
+```json
+{
+  "incident_id": "NEXUS-2026-06-08",
+  "radar_telemetry": {
+    "target_id": "TG-4821-X",
+    "classification": "Supersonic Drone (Uncharted)",
+    "speed": "Mach 3.2",
+    "threat_level": "CRITICAL THREAT",
+    "coordinates": {
+      "lat": "44.4268",
+      "long": "26.1025",
+      "region": "Romanian Airspace Corridor East"
+    }
+  },
+  "escort_response": {
+    "vehicle": "Sfinx-01",
+    "status": "DEPLOYED",
+    "fusion_core_output": "1.21 GW",
+    "containment_field_stability": "99.4%"
+  },
+  "mcp_log_status": "SUCCESSFULLY_SAVED_TO_MONGODB_ATLAS"
+}
+```
+*Notă: Aceste date arată exact ce informații trimite panoul nostru în Flask către baza de date atunci când AI-ul detectează o țintă.*
+
 
 ## 🛠️ Tech Stack & Architecture
 - **Backend & Interface**: Python, Flask, HTML5, CSS3 (Hosted on PythonAnywhere)
